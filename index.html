@@ -97,7 +97,7 @@ window.addEventListener("keydown", arrow_keys_handler, false);
         myGamePiece = new component(110, 50,jet, 25, 120,"image");
         myGamePiece.gravity = 0;
 	     myBackground = new component(window.innerWidth, window.innerHeight, document.getElementById("back"), 0, 0, "image");   
-        myScore = new component("30px", "Consolas", "blue", 280, 40, "text");
+        myScore = new component("30px", "Consolas", "purple", 280, 40, "text");
         myGameArea.start();
       }
       var myGameArea = {
@@ -294,6 +294,10 @@ window.addEventListener("keydown", arrow_keys_handler, false);
         }else{
         	accelerate(0.05)
         }
+	      if(this.score == 2000){
+		      alert("You got 2000, New level: fighter jet!")
+		      location.href="https://b0mbers.github.io/JUMP-game-/Level-1/"
+	      }
       },1000/60)
     </script>
   </body> 
