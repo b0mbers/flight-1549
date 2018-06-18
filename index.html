@@ -181,7 +181,7 @@ window.addEventListener("keydown", arrow_keys_handler, false);
         var x, height, gap, minHeight, maxHeight, minGap, maxGap, randOm, v;
         for (i = 0; i < myObstacles.length; i += 1) {
           if (myGamePiece.crashWith(myObstacles[i])) {
-            location.href = "https://i.skyrock.net/9737/4419737/pics/626768520.gif"
+            //location.href = "https://i.skyrock.net/9737/4419737/pics/626768520.gif"
 		  //setTimeout(function(){thing.close()},10000)
 		  
 		if(myGameArea.frameNo<getCookie("pb")){
@@ -196,7 +196,7 @@ window.addEventListener("keydown", arrow_keys_handler, false);
           } 
         }
 	      if(bomb.crashWith(myGamePiece)){
-	      	location.href="https://i.ytimg.com/vi/_HwtAbtRSVc/maxresdefault.jpg"
+	      	//location.href="https://i.ytimg.com/vi/_HwtAbtRSVc/maxresdefault.jpg"
 		      var highscore = getCookie("pb")
 		      if(myGameArea.frameNo<highscore){
 			setCookie("pb", myGameArea.frameNo, 9999)
